@@ -31,6 +31,7 @@ public/system/*.*
 .DS_Store
 .idea
 .idea/*
+.idea/*.xml
 ._.*
 ./spec/cassettes/*
 guardfile

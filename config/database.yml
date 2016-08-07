@@ -5,8 +5,8 @@ default: &default
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
   host: localhost
-  username: rails
-  password: <%= ENV['APP_DATABASE_PASSWORD'] %>
+  username: Glyne
+  password:
 
 development:
   <<: *default
@@ -22,8 +22,8 @@ test:
 production:
   <<: *default
   database: main_site_production
-  username: rails
-  password: <%= ENV['APP_DATABASE_PASSWORD'] %>
+  username: Glyne
+  password:
 
 
 

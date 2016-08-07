@@ -4,4 +4,7 @@
     = render 'shared/head'
   %body#web_styles
     = render 'shared/header'
-    = yield
+    .container
+      #main.col-md-12.content_border
+        .col-md-12
+          = yield

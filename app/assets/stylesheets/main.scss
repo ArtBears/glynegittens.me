@@ -1,10 +1,5 @@
-@font-face{
-  font-family: 'DidactGothic';
-  src: url(fonts/DidactGothic.ttf);
-}
-
 html{
-  background: cyan;
+  //background: cyan;
 }
 
 body{
@@ -124,9 +119,9 @@ body{
   /* Main Content Wrapper - Borders - Spacing */
 
   .content_border{
-    border-width: 0px 1px;
-    border-style: solid;
-    border-color: #979797;
+    //border-width: 0px 1px;
+    //border-style: solid;
+    //border-color: #979797;
     padding-top: 4em;
   }
 
@@ -134,7 +129,7 @@ body{
   /* Blog Post Styles  */
 
   .blog_preview{
-    background: #D8D8D8;
+    background: #fff;
     min-height: 20em; // change this
     margin-bottom: 2em;
     padding-left: 0;
@@ -174,7 +169,7 @@ body{
   }
 
   .blog_preview_common{
-    background-image: url(../images/london.png);
+    background-image: url( image_path('london.png'));
   }
 
 

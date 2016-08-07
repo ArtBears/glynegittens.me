@@ -3,9 +3,9 @@
     %ul.nav.navbar-nav.navbar-left
       %li
       %li.nav-logo.hidden-xs
-        %a.clearfix{:href => root_url}
+        %a.clearfix{href: root_url}
           .logo-img.clearfix
-            %img.navbar-brand.no-padding.no-margin{:alt => "logo", :src => "../images/gg-logo.png"}/
+            %img.navbar-brand.no-padding.no-margin{alt: "logo", src: image_path("gg_logo.png")}
     %ul.nav.navbar-nav.navbar-right.links
       %li
         = link_to "Home", root_path

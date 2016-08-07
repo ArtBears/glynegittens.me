@@ -7,14 +7,18 @@ Rails.application.routes.draw do
 
   get 'pages/resume'
 
-  get 'welcome/index'
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   root 'pages#index'
   get '/' => 'pages#index'
+  controller :pages do
+    get 'blog', to: 'pages#blog', as: 'blog'
+    get 'index', to: 'pages#index', as: '/'
+    get 'projects', to: 'pages#projects', as: 'projects'
+    get 'resume', to: 'pages#resume', as: 'resume'
+  end
 
 
   # Example of regular route:

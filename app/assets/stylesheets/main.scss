@@ -1,0 +1,183 @@
+@font-face{
+  font-family: 'DidactGothic';
+  src: url(fonts/DidactGothic.ttf);
+}
+
+html{
+  background: cyan;
+}
+
+body{
+  //background: green;
+}
+/* Generic Styles */
+.no-padding{
+  padding: 0 0 !important;
+}
+.no-margin{
+  margin: 0 0 !important;
+}
+
+
+/* Namespace
+
+   KEEP CUSTOM STYLINGS IN THIS TAG */
+#web_styles{
+  font-family: 'DidactGothic';
+  .blue{
+    background: blue !important;
+
+  }
+
+  .green{
+    background: green;
+  }
+
+  // Navigation Bar
+  nav{
+
+    position: relative;
+    background: #871847;
+
+    &:after{
+      width: 100%;
+      background: yellow;
+    }
+  }
+
+  .navbar{
+    border-radius: 0px !important;
+    margin-bottom: 0px !important;
+  } // .navbar: bootstrap override
+
+
+  .nav>li>a:focus, .nav>li>a:hover{
+    background: #871847;
+  } // .nav: bootstrap override
+
+  a{
+    color: #f8f8f8 !important;
+    &:focus, &:hover{
+      color: #f8f8f8 !important;
+    }
+  }  // a: bootstrap override
+  .nav.navbar-nav {
+    ul{
+      li{
+        position: relative;
+        height: 100%;
+      }
+    }
+  }
+
+  .navbar-nav{
+    li{
+      border-top: 2.25px solid transparent;
+      min-width: 112px;
+      text-align: center;
+      -webkit-transition: border-top 1s;
+      -moz-transition: border-top 1s;
+      -o-transition: border-top 1s;
+      transition: border-top 1s;
+      a{
+        padding: 30px 30px;
+
+      }
+      &:hover{
+
+
+
+      }
+    }
+  }
+  .navbar-right{
+    li{
+      &:hover{
+        border-top: 2.25px solid white;
+      }
+    }
+  }
+  .page_nav{
+    padding-right: 5em;
+  }
+
+  .nav-logo{
+    a.clearfix{
+      padding: 10px 30px;
+
+    }
+    &:hover{
+      border-top: 2.25px solid transparent;
+    }
+    .logo-img{
+      background: white;
+      border-radius: 100%;
+      padding: 10px;
+      img{
+        height: 50px;
+        width: 50px;
+      }
+    }
+
+  }
+
+  /* Main Content Wrapper - Borders - Spacing */
+
+  .content_border{
+    border-width: 0px 1px;
+    border-style: solid;
+    border-color: #979797;
+    padding-top: 4em;
+  }
+
+
+  /* Blog Post Styles  */
+
+  .blog_preview{
+    background: #D8D8D8;
+    min-height: 20em; // change this
+    margin-bottom: 2em;
+    padding-left: 0;
+    padding-right: 0;
+    // border: 1px solid #979797;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    /* offset-x | offset-y | blur-radius | color */
+    box-shadow: 6px 5px 5px #979797;
+    -webkit-transition: box-shadow .5s;
+    -moz-transition: box-shadow .5s;
+    -o-transition: box-shadow .5s;
+    transition: box-shadow .5s;
+
+    p{
+      text-align: justify;
+      font-size: 1.6em;
+    }
+
+    &:hover{
+      box-shadow: 6px 5px 5px teal;
+      cursor: pointer;
+    }
+  }
+
+  .blog_title{
+    margin-bottom: 0.7em;
+    text-align: center;
+  }
+
+  .blog_preview_group_image{
+    height: 80px;
+    border-bottom: 1px solid black;
+    margin: 0;
+    padding: 0;
+  }
+
+  .blog_preview_common{
+    background-image: url(../images/london.png);
+  }
+
+
+
+
+} // #WebStyles: Namespace wrapper
